@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies y Gustos - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <style>
+        header {
+            background-color: #e52521;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px 8px 0 0;
+            flex-wrap: wrap;
+        }
+        #logo h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #009b3a;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .menu ul li a:hover {
+            background-color: #fbd000;
+            color: #000000;
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        @media (max-width: 768px) {
+            .galeria-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .galeria-item {
+            background-color: #fff;
+            border: 2px solid #009b3a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        .galeria-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+        }
+        .seccion-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-top: 4px solid #fbd000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div id="logo">
+                <h1>Mi Sitio Personal</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="hobbies.html">Pasatiempos Y mis Amigos
+                    </a></li>
+                    <li><a href="contacto.html">Contacto,Ubicación y mas Info sobre mi</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Mis Hobbies y Preferencias</h2>
+
+            <!-- Galería simétrica con 4 fotos (Image 2 a Image 5) -->
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="images/Image (2).jpg" alt="Pasatiempo 1">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/Image (3).jpg" alt="Pasatiempo 2">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/Image (4).jpg" alt="Pasatiempo 3">
+                </div>
+                <div class="galeria-item">
+                    <img src="images/Image (5).jpg" alt="Pasatiempo 4">
+                </div>
+            </div>
+
+            <div class="seccion-card">
+                <h3>Mis Pasatiempos Favoritos</h3>
+                <ul>
+                    <li>Jugar videojuegos</li>
+                    <li>Escuchar música</li>
+                    <li>Ir al gym</li>
+                    <li>Ver Series de Ciencia Ficcion o Sobrenaturales</li>
+                </ul>
+            </div>
+
+            <div class="seccion-card">
+                <h3>Mis Objetivos del Año </h3>
+                <ol>
+                    <li>Terminar mi 4to cuatrimestre</li>
+                    <li>Pasarla bien con mis amigos en fiestas importantes disfrutar de mi adolescencia</li>
+                    <li>Poder sacar buenas calificaciones pero mas importante llevarme conocimientos que me sirvan en el futuro</li>
+                </ol>
+            </div>
+
+            <div class="seccion-card">
+                <h3>Glosario Web </h3>
+                <dl>
+                    <dt><strong>HTML5</strong></dt>
+                    <dd>Lenguaje de marcado utilizado para definir la estructura de las páginas web.</dd>
+                    <dt><strong>CSS3</strong></dt>
+                    <dd>Lenguaje de diseño utilizado para dar estilo y formato estético a un sitio web.</dd>
+                    <dt><strong>GitHub Pages</strong></dt>
+                    <dd>Servicio que permite publicar y hospedar sitios web de manera gratuita.</dd>
+                </dl>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Mi Sitio Web Personal. Act 6, Unidad 2</p>
+        </footer>
+    </div>
+</body>
+</html>

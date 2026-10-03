@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Ubicación - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <style>
+        header {
+            background-color: #e52521;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px 8px 0 0;
+            flex-wrap: wrap;
+        }
+        #logo h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #009b3a;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .menu ul li a:hover {
+            background-color: #fbd000;
+            color: #000000;
+        }
+
+        .grid-contacto {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .tarjeta-contacto {
+            background-color: #ffffff;
+            border: 2px solid #e52521;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+        }
+        .tarjeta-contacto img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            border: 2px solid #009b3a;
+            margin-top: 10px;
+        }
+        .enlace-destacado {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #009b3a;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .enlace-destacado:hover {
+            background-color: #fbd000;
+            color: #000000 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div id="logo">
+                <h1>Mi Sitio Personal</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="hobbies.html">Pasatiempos Y mis Amigos</a></li>
+                    <li><a href="contacto.html">Contacto,Ubicación y mas Info sobre mi</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Contacto y Ubicación</h2>
+            <p>Conoce mi contenido multimedia favorito y referencias web.</p>
+            <div class="grid-contacto">
+                <div class="tarjeta-contacto">
+                    <img src="images/Image (6).jpg" alt="Imagen de contacto 1">
+                    <h3>Proveniente de Leon,Gto.</h3>
+                </div>
+                <div class="tarjeta-contacto">
+                    <img src="images/Image (7).jpg" alt="Imagen de contacto 2">
+                    <h3>Recursos Web</h3>
+                    <p>Visita aqui para aprender mas de mi:</p>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="enlace-destacado">Ir a W3Schools</a>
+                </div>
+            </div>
+
+            <div class="grid-contacto" style="margin-top: 25px;">
+                <div class="tarjeta-contacto">
+                    <h3>Video Informativo (YouTube)</h3>
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de YouTube" allowfullscreen></iframe>
+                </div>
+
+                <div class="tarjeta-contacto">
+                    <h3>Ubicación (Google Maps)</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119183.82869083556!2d-101.75806498522066!3d21.122177405298836!2m3!1f0!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf830d95d513%3A0x868c2ee0b3254929!2sLe%C3%B3n%2C%20Gto.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Mi Sitio Web Personal. Act 6, Unidad 2</p>
+        </footer>
+    </div>
+</body>
+</html>
